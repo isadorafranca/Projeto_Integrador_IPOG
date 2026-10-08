@@ -245,3 +245,189 @@ As quatro etapas foram concluídas com êxito usando `gemini-3.5-flash-lite`:
 - O código imprime um aviso quando `GOOGLE_API_KEY` e `GEMINI_API_KEY` estão simultaneamente configuradas; a biblioteca informa que usa `GOOGLE_API_KEY`.
 
 - O pipeline depende das colunas esperadas do Superstore, especialmente `Sales`, `Profit`, `Discount`, `Order ID`, `Customer ID`, `Order Date`, `Ship Date`, `Region`, `Segment`, `Category`, `Sub-Category` e `Ship Mode`.
+
+## Escopo acadêmico e plano do projeto
+
+### Tema e título
+
+- **Tema:** Sistema Multiagente para Geração Automática de Relatórios Analíticos.
+
+- **Título:** Agentes de IA para Análise Inteligente de Performance da Superstore USA.
+
+- **Dataset de referência:** [Sample Superstore no Kaggle](https://www.kaggle.com/datasets/bravehart101/sample-supermarket-dataset).
+
+### Objetivo geral
+
+Desenvolver um sistema multiagente de IA com o framework **Agno**, capaz de analisar dados de vendas e gerar automaticamente três relatórios personalizados para diferentes níveis hierárquicos:
+
+1. CEO;
+
+1. Departamento de Vendas;
+
+1. Área de Produtos e Logística.
+
+### Objetivos específicos
+
+- compreender fundamentos de agentes de IA e arquiteturas multiagentes;
+
+- dominar o framework Agno em Python;
+
+- integrar agentes de IA a bases estruturadas;
+
+- desenvolver tools customizadas para análise de dados;
+
+- criar pipelines de processamento com agentes autônomos;
+
+- utilizar memória e conhecimento do Agno;
+
+- gerar relatórios profissionais em Markdown.
+
+## Etapas e entregáveis planejados
+
+### Etapa 1 — Arquitetura e ambiente
+
+Atividades e entregáveis:
+
+- documento de arquitetura do sistema multiagente;
+
+- ambiente de desenvolvimento configurado e funcional;
+
+- primeiro agente Agno funcionando, incluindo um exemplo Hello World.
+
+### Etapa 2 — Análise exploratória e design
+
+Atividades:
+
+- compreender o dataset Sample Superstore;
+
+- identificar dimensões e métricas;
+
+- analisar qualidade e completude dos dados;
+
+- desenhar os relatórios CEO, Vendas e Produtos/Logística;
+
+- planejar as funções Python expostas como tools;
+
+- definir parâmetros de entrada e saída;
+
+- testar inicialmente as funções de análise.
+
+Entregáveis:
+
+- notebook de análise exploratória;
+
+- especificação dos três relatórios, incluindo estrutura, seções e métricas;
+
+- especificação técnica das tools.
+
+### Etapa 3 — Agente Analista e tools
+
+Funcionalidades planejadas:
+
+- consultas de vendas por período, região e categoria;
+
+- cálculo de receita, lucro, margem e crescimento;
+
+- identificação de tendências e anomalias;
+
+- comparativos temporais;
+
+- funções Python para consultas e métricas;
+
+- uso de decoradores `@tool` para exposição ao agente;
+
+- análises estatísticas automatizadas.
+
+Entregáveis:
+
+- Agente Analista funcional;
+
+- documentação técnica das tools e capacidades;
+
+- notebook de testes e validação.
+
+### Etapa 4 — Agentes especializados
+
+Implementar três agentes de geração de relatórios, com templates e linguagem personalizada por audiência.
+
+**Relatório CEO:** visão estratégica, síntese executiva, tendências macro e recomendações; linguagem formal e concisa; formato de resumo executivo de 1 a 2 páginas.
+
+**Relatório Vendas:** performance por região, segmento e período; rankings e comparativos; formato operacional com tabelas.
+
+**Relatório Produtos/Logística:** categorias, subcategorias, rentabilidade por produto, shipping e distribuição; formato analítico com recomendações operacionais.
+
+Entregáveis:
+
+- três agentes geradores funcionais;
+
+- templates de relatório;
+
+- exemplos de relatórios para validação.
+
+### Etapa 5 — Integração e validação end-to-end
+
+Atividades:
+
+- criação do Team de Agentes;
+
+- implementação do Workflow;
+
+- definição do fluxo entre agentes;
+
+- tratamento de dependências e passagem de contexto;
+
+- uso de `session_state` para cache de resultados intermediários;
+
+- geração e formatação profissional dos relatórios em Markdown;
+
+- testes end-to-end e validação da qualidade;
+
+- ajustes e refinamentos.
+
+Entregáveis:
+
+- sistema multiagente integrado com Team/Workflow;
+
+- pipeline automatizado;
+
+- três relatórios finais gerados automaticamente.
+
+### Etapa 6 — Refinamento, documentação e apresentação
+
+Atividades:
+
+- ajuste fino das instruções dos agentes;
+
+- otimização de performance;
+
+- tratamento de edge cases;
+
+- manual técnico;
+
+- guia de instalação e configuração;
+
+- documentação da arquitetura;
+
+- preparação de demonstração ao vivo ou gravada;
+
+- elaboração de slides de suporte.
+
+Entregáveis finais:
+
+- sistema refinado;
+
+- documentação técnica completa;
+
+- relatórios finais de CEO, Vendas e Produtos/Logística.
+
+## Requisitos de execução e publicação
+
+- execução integral no **Google Colab**;
+
+- publicação do projeto no **GitHub**;
+
+- organização profissional do código, documentação e resultados;
+
+- atenção à segurança: nunca publicar chaves de API no notebook ou no repositório;
+
+- uso de variáveis protegidas/Secrets do Colab e arquivo `.gitignore` para saídas ou credenciais sensíveis.
